@@ -1,0 +1,240 @@
+.myname{
+    text-align: center;
+   font-size: 35px; 
+   margin-bottom: 10px;
+}
+.mynamelight{
+ color: #322D28;
+}
+.mynamedark{
+ color: #F5F1E8;
+}
+.divhome{
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-top: 50px;
+    height: 100%;
+    flex: 1;
+}
+.text{
+    text-align: center;
+    margin-top: 0;
+}
+.textlight{
+    color: #5F574F;
+}
+.textdark{
+   color:  #D6D0C6;
+}
+.textdiv{
+    width: 200px;
+    margin: auto;
+    height: 120px;
+}
+.aboutmetlight{
+    color: #5A5248;
+    background-color: rgba(251,248,243,0.65);
+    border: solid 1px rgba(56,50,43, 0.2);
+}
+.aboutmedark{
+    background-color:  rgba(18,18,20,0.55);
+   border: solid 1px rgba(252,227,192, 0.2);
+   color: rgba(255, 255, 255, 0.8);
+}
+@keyframes spindivskills {
+     0%{
+        transform:rotate(0deg);
+     }
+     100%{
+        transform:rotate(360deg)
+     }
+   }
+.skills-1{
+    transform: rotate(0deg)translate(110px) rotate(0deg);
+}
+.skills-2{
+    transform: rotate(60deg)translate(110px) rotate(-60deg);
+}
+.skills-3{
+    transform: rotate(120deg)translate(110px) rotate(-120deg);
+}
+.skills-4{
+    transform: rotate(180deg)translate(110px) rotate(-180deg);
+}
+.skills-5{
+    transform: rotate(240deg)translate(110px) rotate(-240deg);
+}
+.skills-6{
+    transform: rotate(300deg)translate(110px) rotate(-300deg);
+}
+.skills{
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-radius: 45px;
+    width: 90px;
+    height: 45px;
+    font-size: 20px;
+}
+.skillsligh{
+  background-color: rgba(255,255,255,0.7);
+  border: solid 1px rgba(180,140,40, 0.4);
+  color: #2C2416;
+}
+.skillsdark{
+  background-color: rgba(18,18,20,0.65);
+  border: solid 1px rgba(252,227,192,0.35);
+  color: #FCE3C0;
+}
+.divskillsligh{
+    border: solid 1px rgba(180,140,40,0.35);
+}
+.divskillsdark{
+   border: solid 1px rgba(212,175,55,0.4);
+}
+.skillsligh:hover{
+    background-color: rgba(245, 230,200, 0.85);
+    border: solid 1px #B48C28;   
+}
+.skillsdark:hover{
+    background-color: rgba(212,175,55,0.2);
+ border: solid 1px #D4AF37;
+}
+.tittle{
+  font-size: 25px;
+}
+.tittlelight{
+    color: #2C2416;
+   
+}
+.tittledark{
+ color: #FCE3C0
+}
+.underline{
+    width: 220px;
+    height: 3px;
+    border-radius: 10px;
+    overflow: hidden; 
+ position: relative;
+ margin: 1px auto 19px auto;
+}
+.underlinelight{
+  background-color: rgba(180, 140, 40, 0.1);
+}
+.underlinedark{
+    background-color: rgba(212,175,55,0.1);
+}
+.nameclassdiv{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@keyframes moveGlow {
+    0%{
+        left: -100%;
+    }
+    50%,100%{
+        left: 100%;
+    }
+}
+.underline:before{
+    display: block;
+    content: '';
+    top: 0;
+    left: -100%;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    animation: moveGlow 2.5s infinite ease-in-out;
+}
+.underlinelight:before{
+    background: linear-gradient(
+  90deg,
+  transparent,
+  #B48C28,
+  #2C2416,
+  #B48C28,
+  transparent
+   )
+}
+.underlinedark:before{
+  background: linear-gradient(
+    90deg,
+    transparent,
+    #FCE3C0,
+    #D4AF37,
+    #FCE3C0,
+    transparent
+  );
+}
+.divskills{
+    width: 220px;
+    height: 220px;
+    border-radius: 110px;
+   margin-bottom: 60px;
+   position: relative;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   animation:spindivskills 20000ms linear infinite;
+}
+.secresponsiv{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+}
+.aboutme{ 
+    width: 270px;
+    border-radius: 14px;
+    padding: 15px;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pabout{
+    line-height: 1.5;
+    font-size: 25px;
+    text-align: center; 
+}
+@media(min-width:700px){
+    .secresponsiv{
+    flex-direction: row;
+    justify-content: space-around;
+    margin-bottom: 46px;
+    margin-top: 46px;
+}
+.divskills{
+    margin-bottom: auto;
+}
+.textdiv{
+    width: 380px;
+    font-size: 18px;
+    margin-top: 18px;
+}
+.myname{
+    font-size: 39px;
+}
+.underline{
+    width: 240px;
+}
+}
+@media(min-width:1150px){
+    .divskills{
+       width: 250px;
+       height: 250px;
+       border-radius: 125px;
+    }
+    
+    .aboutme{
+       width: 300px;
+       padding:  0px  18px;
+
+    }
+}

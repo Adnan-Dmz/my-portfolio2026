@@ -1,0 +1,18 @@
+
+.pro{
+   flex: 1;
+    height: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.TXT{
+    width: 65%;
+    text-align: center;
+}
+.TXTdark{
+    color: white;
+    background-color: rgba(10, 14, 12, 0.5);
+}

@@ -6,10 +6,22 @@ import  Contact  from "./pages/contact"
 import  Project  from "./pages/project"
 import Nav from './componet/nav';
 import {StyleContectProvider} from './usehook/createcontext'
-function App() {
+import { useContext } from 'react';
+import { StyleContext } from './usehook/createcontext';
+import Footer from './componet/footer';
+import ScreenWidth from "./with"
+const app=()=>{
+  return(
+ <StyleContectProvider>
+   <AppContent/>
+ </StyleContectProvider>
+  )
+}
+
+function AppContent() {
+  const {isLight,isPersian}=useContext(StyleContext)
   return (
-    <div className="App">
-      <StyleContectProvider>
+    <div className= {` app ${isLight ? "app-light":"app-dark"} ${isPersian?"apppersian":"appenglish"}`}>
         <BrowserRouter>
             <Nav/>
           <Routes>
@@ -17,10 +29,13 @@ function App() {
              <Route path="contact" element={<Contact/>}/>
              <Route path="project" element={<Project/>}/>
           </Routes>
+          <ScreenWidth/>
+          <Footer/>
         </BrowserRouter>
-      </StyleContectProvider>
     </div>
+    
   );
 }
+ 
 
-export default App;
+export default app;

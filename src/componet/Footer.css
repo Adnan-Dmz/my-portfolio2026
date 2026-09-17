@@ -1,0 +1,39 @@
+.footerdiv{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+   align-items: center;
+    padding:0 10px;
+    height: 60px;
+    border: none;
+    width: 100%;
+    box-sizing: border-box;  
+}
+.footerdivlight{
+    background-color: rgba(251,248,243,0.45);
+}
+.footerdivdark{
+ background-color: rgba(5, 5, 6, 0.45);
+}
+.divsvg{
+    display: flex;
+   flex-direction: row;
+   gap: 8px;
+}
+.svglight{
+   color:#38322B ;
+}
+.svgdark{
+    color: #FCE3C0;
+}
+.divmyname{
+    display: flex;
+    flex-direction: row;
+   align-items: center;
+}
+.divmynamelight{
+  color: rgba(56,50,43,0.65);
+}
+.divmynamedark{
+color: rgba(255, 255,255, 0.4);
+}
