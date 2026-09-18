@@ -206,7 +206,7 @@
     gap: 15px;
   }
 }
-@media(max-height:680px){
+@media(max-height:666px){
      .divcontact{
         margin-top: 85px;
         margin-bottom: 55px;

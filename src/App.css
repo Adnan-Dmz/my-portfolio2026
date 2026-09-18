@@ -1,5 +1,4 @@
-@import url('https://cdnjs.cloudflare.com/ajax/libs/vazirmatn/33.0.3/Vazirmatn-font-face.css');
-@import url('https://fonts.cdnfonts.com/css/plus-jakarta-sans');
+
 .app-light{
 background-image: url(./icon/backgroundlight.png);
 }
@@ -15,10 +14,4 @@ background-image: url(./icon/backgrounddark.png);
  flex-direction: column;
  width: 100%;
  overflow: hidden;
-}
-.appenglish*{
-  font-family: 'Plus Jakarta Sans', 'Vazirmatn',sans-serif !important;
-}
-.apppersian*{
-  font-family:'Vazirmatn','Plus Jakarta Sans',sans-serif !important;
 }
