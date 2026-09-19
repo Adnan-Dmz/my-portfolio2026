@@ -9,7 +9,6 @@ import { StyleContextProvider } from './usehook/createcontext'
 import { useContext } from 'react';
 import { StyleContext } from './usehook/createcontext';
 import Footer from './component/footer';
-import ScreenWidth from "./with"
 const App = () => {
   return (
     <StyleContextProvider>
@@ -21,7 +20,7 @@ function AppContent() {
   const { isLight, isPersian } = useContext(StyleContext)
   return (
     <div className={` app ${isLight ? "app-light" : "app-dark"} ${isPersian ? "apppersian" : "appenglish"}`}>
-      <BrowserRouter>
+      <BrowserRouter basename='my-portfolio2026'>
         <Nav />
         <Routes>
           <Route path="/" element={<Home />} />
