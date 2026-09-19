@@ -20,14 +20,14 @@ const Footer = () => {
             </div>
             <div className="divsvg">
                 <div>
-                    <a className={isLight ? "svglight" : "svgdark"} href="https://t.me/ADNAN_DMZ">
+                    <a className={isLight ? "svglight" : "svgdark"} href="https://t.me/ADNAN_DMZ" aria-label="Telegram">
                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
                             <path d="M21.5 2L2 11l6 2.5L18 6l-8 9.5v5.5l3.5-3.5 4.5 3.5 3.5-18.5z" />
                         </svg>
                     </a>
                 </div>
                 <div>
-                    <a className={isLight ? "svglight" : "svgdark"} href="mailto:adnan55dmz@gmail.com">
+                    <a className={isLight ? "svglight" : "svgdark"} href="mailto:adnan55dmz@gmail.com" aria-label="Email">
                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
                             <rect x="2" y="4" width="20" height="16" rx="3" />
                             <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />

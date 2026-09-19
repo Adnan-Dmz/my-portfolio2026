@@ -1,17 +1,18 @@
+.app-light {
+  background-image: url(./icon/backgroundlight.png);
+}
 
-.app-light{
-background-image: url(./icon/backgroundlight.png);
+.app-dark {
+  background-image: url(./icon/backgrounddark.png);
 }
-.app-dark{
-background-image: url(./icon/backgrounddark.png);
-}
-.app{
+
+.app {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   min-height: 100vh;
- display: flex;
- flex-direction: column;
- width: 100%;
- overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  overflow: hidden;
 }

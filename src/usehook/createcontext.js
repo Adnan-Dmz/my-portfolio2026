@@ -8,6 +8,6 @@ export const StyleContext=createContext(
         toggleLanguage:()=>{}
     }
 )
-export const StyleContectProvider=(props)=>{
+export const StyleContextProvider=(props)=>{
     return <StyleContext.Provider value={useStyle()}>{props.children}</StyleContext.Provider>
 }
